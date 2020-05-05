@@ -1,0 +1,104 @@
+@font-face
+{
+    font-family: 'jetbrains-mono';
+    src: url("font/jetbrains-mono-medium.ttf");
+}
+
+@font-face
+{
+    font-family: 'iran-sans';
+    src: url("font/iran-sans.ttf");
+}
+
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+header
+{
+    height: 80vh;
+}
+
+header > .text-bardiademon
+{
+    font-family: jetbrains-mono, sans-serif;
+    color: #ffffff;
+    letter-spacing: 5px;
+    position: absolute;
+    font-size: 20px;
+    margin: 10px;
+}
+
+body
+{
+    background-color: #0277BD;
+}
+
+.audio
+{
+    width: 50vw;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.main-audio
+{
+    position: absolute;
+    top: 80%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+}
+
+.audio > img
+{
+    width: 200px;
+    height: 100%;
+}
+
+.info-music
+{
+    font-family: 'iran-sans', serif;
+}
+
+.val-info-music
+{
+    margin-left: 15px;
+}
+
+.name-info-music
+{
+    font-weight: bold;
+}
+
+.btn-open
+{
+    background-color: #0277BD;
+    font-family: iran-sans, serif;
+    margin: 20px;
+    box-shadow: 2px 2px #ffffff;
+    width: 120px;
+    text-align: center;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+

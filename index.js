@@ -4,16 +4,19 @@ import path from 'path';
 
 import ElectronReload from 'electron-reload';
 
-ElectronReload (__dirname);
+ElectronReload (url.format ({
+    pathname : path.join (__dirname , "view") ,
+    protocol : "file:"
+}));
 
 app.on ("ready" , () =>
 {
-    const frame = new BrowserWindow ({ width : 500 , height : 500 });
+    const frame = new BrowserWindow ({ width : 1100 , height : 500 });
     let promise = frame.loadURL (url.format ({
-        pathname : path.join (__dirname , "index.html") ,
+        pathname : path.join (__dirname , "view" , "index.html") ,
         protocol : "file:"
     }));
-
+    frame.removeMenu ();
     promise.then (r =>
     {
         console.log (r);
